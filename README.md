@@ -102,12 +102,17 @@ pas repris : les clients recréent un compte.
 
 ## Mettre en ligne (GitHub Pages, gratuit)
 
-1. Sur GitHub, ouvrir le dépôt → **Settings** → **Pages**.
-2. *Source* : **Deploy from a branch** ; *Branch* : `claude/how-many-plants-site-vxs24q`, dossier **/ (root)** → **Save**.
-3. Attendre 1 à 2 minutes : le site est en ligne sur **https://michprk.github.io/nioushadow.blooms.com/**
-4. Cocher **Enforce HTTPS** sur la même page.
+Le site est publié par GitHub Pages depuis la branche **`gh-pages`** :
+**https://michprk.github.io/nioushadow.blooms.com/**
 
-Chaque nouveau « push » sur cette branche met le site à jour automatiquement.
+Pour publier une modification, il faut la pousser aussi sur `gh-pages` :
+
+```bash
+git push origin HEAD:gh-pages
+```
+
+GitHub met le site à jour en une minute environ. Dans *Settings → Pages*, cocher
+**Enforce HTTPS** si ce n’est pas déjà fait.
 
 **Nom de domaine** : pour utiliser une adresse comme `nioushadow-blooms.com` (aujourd’hui sur Wix),
 la fleuriste doit faire pointer son domaine vers GitHub Pages (*Settings → Pages → Custom domain*).
