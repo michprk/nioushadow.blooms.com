@@ -365,6 +365,19 @@ sup { font-size: .6em; line-height: 0; }
   to   { rotate: 1.8deg; }
 }
 
+/* Bandeau « Démo » (à retirer pour la version finale : supprimer la ligne .demo-bar des pages) */
+.demo-bar {
+  position: relative;
+  z-index: 32;
+  padding: 9px var(--gutter);
+  background: var(--ink);
+  color: var(--cream);
+  font: 500 13px/1.4 var(--font-mono);
+  letter-spacing: .04em;
+  text-align: center;
+}
+.demo-bar strong { color: var(--olive); font-weight: 500; text-transform: uppercase; letter-spacing: .1em; }
+
 /* --------------------------------------------------------------------------
    Bandeau défilant
    -------------------------------------------------------------------------- */
