@@ -45,6 +45,7 @@
   <symbol id="instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="19" height="19" x="2.5" y="2.5" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
   <symbol id="phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
   <symbol id="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
   <symbol id="books" viewBox="0 0 150 70" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
     <path class="b" d="M4 48 H146 V68 H4 Z"/><path d="M14 48 V68 M136 48 V68"/>
     <path class="d" d="M14 30 H138 V48 H14 Z"/><path d="M24 31 V47 M128 31 V47" stroke="#f9f5f1"/>
@@ -94,6 +95,7 @@
     <div class="nav__actions">
       <a class="btn btn--ghost btn--square" href="https://www.instagram.com/nioushadow/" target="_blank" rel="noopener" aria-label="Instagram (nouvel onglet)"><svg aria-hidden="true"><use href="#instagram"/></svg></a>
       <a class="btn btn--ghost btn--square" href="tel:+32477735659" aria-label="Appeler le +32 477 73 56 59"><svg aria-hidden="true"><use href="#phone"/></svg></a>
+      <a class="btn btn--ghost btn--square" href="connexion.html" data-account-link aria-label="Espace client : se connecter"><svg aria-hidden="true"><use href="#user"/></svg></a>
     </div>
   </div>
 </header>
@@ -120,6 +122,7 @@
       <ol>
         <li><a href="#responsable">Qui est responsable ?</a></li>
         <li><a href="#donnees">Quelles données collectons-nous ?</a></li>
+        <li><a href="#compte">Votre compte client</a></li>
         <li><a href="#finalites">Pourquoi, et sur quelle base ?</a></li>
         <li><a href="#duree">Combien de temps les gardons-nous ?</a></li>
         <li><a href="#destinataires">Qui peut y accéder ?</a></li>
@@ -151,8 +154,13 @@
         <h3>Quand vous visitez le site</h3>
         <p>Nous ne mesurons pas votre visite sans votre accord. Comme tout site, l’hébergeur enregistre des journaux techniques (adresse IP, date, page demandée) pour assurer la sécurité et le bon fonctionnement du service.</p>
       </section>
+      <section id="compte" aria-labelledby="compte-t">
+        <h2 id="compte-t"><span>03</span>Votre compte client</h2>
+        <p>Si vous créez un compte, nous enregistrons votre prénom, votre e-mail, votre mot de passe (chiffré : personne ne peut le lire, pas même nous) et, si vous le souhaitez, votre téléphone.</p>
+        <p>Ces données servent à vous connecter, à pré-remplir vos demandes et à suivre vos commandes (exécution du contrat, article 6.1.b). Les comptes sont hébergés par <strong>Supabase</strong>, dans un centre de données situé dans l’Union européenne. Vous pouvez modifier vos informations à tout moment depuis « Mon espace », et nous supprimons votre compte sur simple demande, ou après 3 ans sans connexion.</p>
+      </section>
       <section id="finalites" aria-labelledby="finalites-t">
-        <h2 id="finalites-t"><span>03</span>Pourquoi, et sur quelle base ?</h2>
+        <h2 id="finalites-t"><span>04</span>Pourquoi, et sur quelle base ?</h2>
         <ul>
           <li><strong>Répondre à votre demande et vous faire une proposition</strong> — mesures précontractuelles prises à votre demande et votre accord donné dans le formulaire (article 6.1.b et 6.1.a du RGPD).</li>
           <li><strong>Préparer, livrer et facturer une commande</strong> — exécution du contrat (article 6.1.b).</li>
@@ -163,7 +171,7 @@
         <p>Vos données ne sont jamais vendues, ni utilisées pour de la publicité ciblée.</p>
       </section>
       <section id="duree" aria-labelledby="duree-t">
-        <h2 id="duree-t"><span>04</span>Combien de temps les gardons-nous ?</h2>
+        <h2 id="duree-t"><span>05</span>Combien de temps les gardons-nous ?</h2>
         <ul>
           <li><strong>Demande restée sans suite</strong> : 12 mois après notre dernier échange.</li>
           <li><strong>Client</strong> : pendant notre relation, puis 3 ans.</li>
@@ -172,39 +180,41 @@
         </ul>
       </section>
       <section id="destinataires" aria-labelledby="destinataires-t">
-        <h2 id="destinataires-t"><span>05</span>Qui peut y accéder ?</h2>
+        <h2 id="destinataires-t"><span>06</span>Qui peut y accéder ?</h2>
         <p>Seule l’équipe de Nioushadow Blooms a accès à vos demandes. Certains prestataires interviennent pour nous, uniquement pour ce service :</p>
         <ul>
           <li>l’hébergeur du site : <mark class="todo">à compléter</mark> ;</li>
           <li><strong>WhatsApp</strong> (Meta) si vous choisissez de nous envoyer votre demande par WhatsApp : c’est vous qui envoyez le message depuis votre application ;</li>
           <li>le service d’envoi du formulaire par e-mail, s’il est activé (Formspree) ;</li>
+          <li><strong>Supabase</strong>, qui héberge les comptes clients (dans l’Union européenne) ;</li>
           <li>le livreur, pour l’adresse et le nom du destinataire.</li>
         </ul>
         <p>Certains de ces services peuvent transférer des données hors de l’Union européenne. Ces transferts sont alors encadrés par les garanties prévues par le RGPD (décision d’adéquation ou clauses contractuelles types de la Commission européenne).</p>
       </section>
       <section id="cookies" aria-labelledby="cookies-t">
-        <h2 id="cookies-t"><span>06</span>Cookies et traceurs</h2>
+        <h2 id="cookies-t"><span>07</span>Cookies et traceurs</h2>
         <p>Ce site n’utilise <strong>aucun cookie publicitaire</strong> et ne vous suit pas sur d’autres sites. Les polices de caractères sont hébergées sur notre propre serveur : aucune connexion n’est faite à Google Fonts.</p>
         <h3>Ce que le site enregistre dans votre navigateur</h3>
         <dl class="labels">
           <div><dt>nb-consent</dt><dd>Votre choix sur les cookies. Nécessaire, conservé 6 mois.</dd></div>
           <div><dt>nb-last-submit</dt><dd>L’heure de votre dernier envoi, pour bloquer le spam. Nécessaire.</dd></div>
+          <div><dt>sb-…-auth-token</dt><dd>Garder votre session ouverte si vous vous connectez à votre compte. Nécessaire, effacé à la déconnexion.</dd></div>
           <div><dt>Mesure d’audience</dt><dd>Désactivée par défaut. Activée seulement si vous l’acceptez.</dd></div>
         </dl>
         <p>Les liens vers Instagram, WhatsApp ou Google Maps vous emmènent sur ces services : leurs propres règles s’appliquent dès que vous cliquez.</p>
         <p><button class="linkbtn" type="button" data-cookie-settings>Modifier mon choix sur les cookies</button></p>
       </section>
       <section id="droits" aria-labelledby="droits-t">
-        <h2 id="droits-t"><span>07</span>Vos droits</h2>
+        <h2 id="droits-t"><span>08</span>Vos droits</h2>
         <p>Vous pouvez à tout moment demander à <strong>consulter</strong>, <strong>corriger</strong> ou <strong>effacer</strong> vos données, <strong>limiter</strong> leur utilisation, vous y <strong>opposer</strong>, les <strong>récupérer</strong> dans un format lisible, ou <strong>retirer votre consentement</strong>. Il suffit de nous contacter : nous répondons dans un délai d’un mois.</p>
         <p>Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une réclamation auprès de l’<strong>Autorité de protection des données</strong> : rue de la Presse 35, 1000 Bruxelles — <a href="https://www.autoriteprotectiondonnees.be" target="_blank" rel="noopener">www.autoriteprotectiondonnees.be</a>.</p>
       </section>
       <section id="securite" aria-labelledby="securite-t">
-        <h2 id="securite-t"><span>08</span>Sécurité</h2>
+        <h2 id="securite-t"><span>09</span>Sécurité</h2>
         <p>Le site est servi uniquement en HTTPS (connexion chiffrée). Le formulaire est protégé contre les robots, et l’accès à vos demandes est limité aux personnes qui en ont besoin pour vous répondre.</p>
       </section>
       <section id="modifications" aria-labelledby="modifications-t">
-        <h2 id="modifications-t"><span>09</span>Modifications</h2>
+        <h2 id="modifications-t"><span>10</span>Modifications</h2>
         <p>Nous pouvons mettre à jour cette politique, par exemple si nous ajoutons un service. La date de dernière mise à jour figure en haut de cette page : 25 septembre 2026.</p>
       </section>
     </article>

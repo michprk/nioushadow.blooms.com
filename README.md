@@ -14,9 +14,13 @@ index.html              page d’accueil
 confidentialite.html    politique de confidentialité (RGPD) + cookies
 cgu.html                conditions générales d’utilisation + mentions légales
 404.html                page « introuvable » personnalisée
+connexion.html          espace client : se connecter, créer un compte, mot de passe oublié
+compte.html             espace client : « Mon espace » (profil, mot de passe, déconnexion)
 assets/css/style.css    tout le style : couleurs, typographie, animations, responsive
 assets/js/boot.js       chargé en premier : force le HTTPS, active les animations
 assets/js/main.js       interactions, formulaire, anti-spam, bannière cookies
+assets/js/auth.js       espace client (connexion via Supabase)
+assets/js/vendor/       bibliothèque Supabase (licence MIT), hébergée sur le site
 assets/fonts/           polices auto-hébergées (Fraunces + DM Mono), aucun appel à Google Fonts
 assets/photos/          les photos du site (voir assets/photos/README.md)
 assets/img/             favicons, icônes d’application, image de partage (og.jpg)
@@ -36,11 +40,13 @@ npx http-server . -p 8080
 # puis ouvrir http://localhost:8080
 ```
 
-## Ajouter les photos
+## Photos
 
-Dépose les photos dans `assets/photos/` avec les noms listés dans
-[`assets/photos/README.md`](assets/photos/README.md). Tant qu’une photo manque, une illustration
-s’affiche à sa place ; une photo présente apparaît en fondu.
+Les photos viennent du site actuel de Nioushadow Blooms (voir
+[`assets/photos/README.md`](assets/photos/README.md)). Elles ont été découpées dans une capture
+d’écran : si la fleuriste fournit les fichiers originaux, il suffit de les remplacer (mêmes noms)
+pour gagner en netteté. Une photo apparaît en fondu ; si un fichier manque, une illustration
+s’affiche à sa place.
 
 ## Un seul appel à l’action
 
@@ -70,6 +76,23 @@ même poids) et le lien « Gérer les cookies » du pied de page permet de chang
 Pour ajouter une mesure d’audience plus tard, voir la fonction `loadAnalytics()` dans `main.js` :
 elle ne se lance qu’avec l’accord du visiteur.
 
+## Espace client (connexion)
+
+Les visiteurs peuvent créer un compte, se connecter, retrouver leurs informations et commander
+avec leur nom et leur e-mail déjà remplis. Un site statique ne peut pas stocker de comptes tout
+seul : l’espace client s’appuie sur **Supabase** (gratuit). Pour l’activer (≈ 10 minutes) :
+
+1. Créer un compte et un projet sur [supabase.com](https://supabase.com), région **Europe (Francfort)**.
+2. *Project Settings → API* : copier l’**URL** du projet et la clé **anon public**.
+3. Les coller en haut de `assets/js/auth.js` (`SUPABASE_URL` et `SUPABASE_ANON_KEY`).
+4. *Authentication → URL Configuration* : mettre l’adresse du site dans **Site URL** et
+   **Redirect URLs** (par ex. `https://www.nioushadow-blooms.com/*`).
+5. *Authentication → Emails* : traduire les e-mails de confirmation en français si besoin.
+
+Tant que ce n’est pas fait, la page de connexion affiche « L’espace client ouvre très bientôt »
+et invite à commander par le formulaire ou par téléphone. Les comptes de l’ancien site Wix ne sont
+pas repris : les clients recréent un compte.
+
 ## HTTPS et sécurité
 
 - `boot.js` redirige automatiquement de `http://` vers `https://`.
@@ -93,6 +116,10 @@ que la page 404 fonctionne partout. Il marche sur n’importe quel hébergement 
   dans la liste des créations, liens ondulés.
 - **Entre les pages** : transition en fondu (navigateurs récents).
 - Tout est coupé si le visiteur a demandé « réduire les animations » dans son système.
+
+## Envoyer le site à la fleuriste
+
+L’aperçu en ligne est privé : ouvre-le, clique sur **Share**, puis colle le lien dans ton e-mail.
 
 ## À compléter avant la mise en ligne
 

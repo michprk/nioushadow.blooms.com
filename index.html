@@ -222,6 +222,9 @@
   <symbol id="phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
   <symbol id="chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
   <symbol id="clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="eye-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.73 5.08a10.74 10.74 0 0 1 11.2 6.57 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-1.44 2.49"/><path d="M14.08 14.16a3 3 0 0 1-4.24-4.24"/><path d="M17.48 17.5a10.75 10.75 0 0 1-15.42-5.15 1 1 0 0 1 0-.7 10.75 10.75 0 0 1 4.45-5.14"/><path d="m2 2 20 20"/></symbol>
   <symbol id="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
 </svg>
 
@@ -268,6 +271,9 @@
       <a class="btn btn--ghost btn--square" href="tel:+32477735659" aria-label="Appeler le +32 477 73 56 59">
         <svg aria-hidden="true"><use href="#phone"/></svg>
       </a>
+      <a class="btn btn--ghost btn--square nav__account" href="connexion.html" data-account-link aria-label="Espace client : se connecter">
+        <svg aria-hidden="true"><use href="#user"/></svg>
+      </a>
       <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
         <span class="burger__lines" aria-hidden="true"><span></span><span></span></span>
         <span class="sr-only">Ouvrir le menu</span>
@@ -284,6 +290,7 @@
     <a href="#abonnement"><span>03</span>Abonnement</a>
     <a href="#carnet"><span>04</span>Carnet de saison</a>
     <a href="#contact"><span>05</span>Commander</a>
+    <a href="connexion.html" data-account-link><span>06</span><span data-account-label>Espace client</span></a>
   </nav>
   <div class="menu__info">
     <a href="tel:+32477735659">+32 477 73 56 59</a>
@@ -314,7 +321,7 @@
         <figure class="frame frame--h1">
           <div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 3">
             <svg class="ph__art" viewBox="0 0 200 260"><use href="#bouquet"/></svg>
-            <img src="assets/photos/hero-1.jpg" alt="" loading="lazy" decoding="async">
+            <img src="assets/photos/bouquet-mariee.jpg" alt="" loading="lazy" decoding="async">
           </div>
         </figure>
         <svg class="ill ill--books" viewBox="0 0 150 70"><use href="#books"/></svg>
@@ -331,7 +338,7 @@
         <figure class="frame frame--h1">
           <div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 3">
             <svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg>
-            <img src="assets/photos/hero-1.jpg" alt="Bouquet de saison composé à l’atelier Nioushadow Blooms" fetchpriority="high" decoding="async">
+            <img src="assets/photos/bouquet-mariee.jpg" alt="Bouquet de mariée de roses blanches et de freesias, tenu par la mariée" fetchpriority="high" decoding="async">
           </div>
         </figure>
         <svg class="ill ill--books" viewBox="0 0 150 70" aria-hidden="true"><use href="#books"/></svg>
@@ -348,7 +355,7 @@
       <figure class="frame frame--h2">
         <div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 3 / 4">
           <svg class="ph__art" viewBox="0 0 90 220" aria-hidden="true"><use href="#bud-plant"/><use href="#bud-pot"/></svg>
-          <img src="assets/photos/hero-2.jpg" alt="Détail d’une fleur de saison" decoding="async">
+          <img src="assets/photos/roses.jpg" alt="Roses roses et rouges posées sur une table" decoding="async">
         </div>
       </figure>
       <svg class="ill ill--bud" viewBox="0 0 90 220" aria-hidden="true"><use class="sway" href="#bud-plant"/><use href="#bud-pot"/></svg>
@@ -358,7 +365,7 @@
 
   <div class="hero__foot container">
     <div class="hero__caption" data-hero-fade>
-      <p class="kicker">Fleuriste-atelier · Mont des Arts</p>
+      <p class="kicker">Fleuriste-atelier au Mont des Arts</p>
       <p class="hero__text">Compositions de saison, dessinées et nouées à la main. Pour offrir, pour célébrer, pour habiter un lieu.</p>
     </div>
     <ul class="hero__index" data-hero-fade>
@@ -387,7 +394,7 @@
       <figure class="frame frame--lg" data-reveal="frame">
         <div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 5">
           <svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg>
-          <img src="assets/photos/atelier.jpg" alt="Composition florale en préparation à l’atelier" loading="lazy" decoding="async">
+          <img src="assets/photos/bouquet-boite.jpg" alt="Bouquet de roses pêche, renoncules et eucalyptus dans une boîte, tenu à deux mains" loading="lazy" decoding="async">
         </div>
       </figure>
       <div class="note" data-reveal="note" aria-hidden="true">
@@ -398,7 +405,7 @@
     </div>
 
     <div class="atelier__body">
-      <p class="kicker" data-reveal>L’atelier — N°01</p>
+      <p class="kicker" data-reveal>L’atelier</p>
       <h2 class="h2" id="atelier-title" data-split>Des fleurs choisies pour ce qu’elles <em>ont à dire</em></h2>
       <p class="lead" data-reveal>Chaque composition commence par une conversation&#8239;: une personne, un moment, une lumière. Nous travaillons au rythme des saisons, avec des tiges choisies une à une, pour des bouquets généreux, libres et jamais figés.</p>
       <p class="lead" data-reveal>Pas de catalogue à recopier&#8239;: chaque pièce est pensée pour vous et composée à la main dans notre atelier, au premier étage du Mont des Arts — à deux pas de la gare Centrale.</p>
@@ -419,7 +426,7 @@
   <div class="container">
     <div class="section-head">
       <div>
-        <p class="kicker" data-reveal>Ce que nous composons — N°02</p>
+        <p class="kicker" data-reveal>Ce que nous composons</p>
         <h2 class="h2" id="creations-title" data-split>Nos <em>créations</em></h2>
       </div>
       <p class="section-head__aside" data-reveal>Du bouquet du vendredi à la scénographie d’un mariage, chaque création part des fleurs de la saison — et de votre histoire.</p>
@@ -431,7 +438,7 @@
           <span class="index__num">01</span>
           <span class="index__title">Bouquets sur mesure</span>
           <span class="index__desc">Des bouquets libres et généreux, composés selon les arrivages de la semaine et vos envies. À offrir, ou à s’offrir.</span>
-          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/creation-bouquets.jpg" alt="" loading="lazy"></span></span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/bouquet-saison.jpg" alt="" loading="lazy"></span></span>
           <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
         </a>
       </li>
@@ -440,7 +447,7 @@
           <span class="index__num">02</span>
           <span class="index__title">Plantes rares</span>
           <span class="index__desc">Des plantes choisies pour leur caractère — feuillages graphiques, espèces peu communes — prêtes à habiter votre intérieur.</span>
-          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--cream); --ill-b: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 280" aria-hidden="true"><use href="#pot-plant"/><use href="#pot-pot"/></svg><img src="assets/photos/creation-plantes.jpg" alt="" loading="lazy"></span></span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--cream); --ill-b: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 280" aria-hidden="true"><use href="#pot-plant"/><use href="#pot-pot"/></svg><!-- photo à venir : ajouter <img src="assets/photos/plantes.jpg" alt=""> --></span></span>
           <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
         </a>
       </li>
@@ -449,7 +456,7 @@
           <span class="index__num">03</span>
           <span class="index__title">Mariages</span>
           <span class="index__desc">De la boutonnière à l’arche fleurie&#8239;: une scénographie pensée avec vous, du premier rendez-vous au jour&nbsp;J.</span>
-          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/creation-mariages.jpg" alt="" loading="lazy"></span></span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/bouquet-mariee.jpg" alt="" loading="lazy"></span></span>
           <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
         </a>
       </li>
@@ -458,7 +465,7 @@
           <span class="index__num">04</span>
           <span class="index__title">Événements &amp; entreprises</span>
           <span class="index__desc">Dîners, lancements, vitrines, réceptions, expériences VIP&#8239;: des compositions à la mesure du lieu et de l’occasion.</span>
-          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 150 220" aria-hidden="true"><use href="#cloche"/></svg><img src="assets/photos/creation-evenements.jpg" alt="" loading="lazy"></span></span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 150 220" aria-hidden="true"><use href="#cloche"/></svg><img src="assets/photos/bouquet-seche.jpg" alt="" loading="lazy"></span></span>
           <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
         </a>
       </li>
@@ -467,7 +474,7 @@
           <span class="index__num">05</span>
           <span class="index__title">Abonnements floraux</span>
           <span class="index__desc">Un bouquet frais livré à intervalle régulier, chez vous ou au bureau, partout dans Bruxelles.</span>
-          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 1"><svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg><img src="assets/photos/creation-abonnements.jpg" alt="" loading="lazy"></span></span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 1"><svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg><img src="assets/photos/bouquet-boite.jpg" alt="" loading="lazy"></span></span>
           <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
         </a>
       </li>
@@ -500,7 +507,7 @@
   <div class="container">
     <div class="abo">
       <div class="abo__body">
-        <p class="kicker" data-reveal>Abonnement floral — N°03</p>
+        <p class="kicker" data-reveal>L’abonnement floral</p>
         <h2 class="h2" id="abo-title" data-split>Des fleurs fraîches, <em>sans y penser</em></h2>
         <p class="lead" data-reveal>Chaque livraison est une surprise de saison, composée à l’atelier et déposée chez vous, au bureau ou au restaurant. Vous choisissez le rythme, nous nous occupons du reste.</p>
 
@@ -522,14 +529,14 @@
         <figure class="frame abo__big" data-reveal="frame">
           <div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 4 / 5">
             <svg class="ph__art" viewBox="0 0 180 320"><use href="#vase-plant"/><use href="#vase-pot"/></svg>
-            <img src="assets/photos/abonnement-1.jpg" alt="" loading="lazy" decoding="async">
+            <img src="assets/photos/bouquet-saison.jpg" alt="" loading="lazy" decoding="async">
           </div>
         </figure>
         <div class="abo__stack">
           <figure class="frame abo__small" data-reveal="frame" style="--d: .15s">
             <div class="ph" style="--ph-bg: var(--cream); --ratio: 1">
               <svg class="ph__art" viewBox="0 0 90 220"><use href="#bud-plant"/><use href="#bud-pot"/></svg>
-              <img src="assets/photos/abonnement-2.jpg" alt="" loading="lazy" decoding="async">
+              <img src="assets/photos/roses.jpg" alt="" loading="lazy" decoding="async">
             </div>
           </figure>
           <svg class="abo__books" viewBox="0 0 150 70"><use href="#books"/></svg>
@@ -547,7 +554,7 @@
   <div class="container">
     <div class="section-head">
       <div>
-        <p class="kicker" data-reveal>Comment commander — N°04</p>
+        <p class="kicker" data-reveal>Comment commander</p>
         <h2 class="h2" id="steps-title" data-split>Du premier message <em>à la livraison</em></h2>
       </div>
       <p class="tag" data-reveal><svg aria-hidden="true"><use href="#clock"/></svg>Commandes au moins 24&nbsp;h à l’avance</p>
@@ -580,7 +587,7 @@
   <div class="container">
     <div class="section-head">
       <div>
-        <p class="kicker" data-reveal>Carnet de saison — N°05</p>
+        <p class="kicker" data-reveal>Le carnet de saison</p>
         <h2 class="h2" id="carnet-title" data-split>Compositions <em>récentes</em></h2>
       </div>
       <div class="carnet__tools" data-reveal>
@@ -598,38 +605,32 @@
     <ul class="gallery__track" data-gallery-track tabindex="0" aria-label="Galerie de compositions, faire défiler horizontalement">
       <li class="gallery__item" style="--s: 1">
         <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 5"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/carnet-1.jpg" alt="Bouquet de saison" loading="lazy" decoding="async" draggable="false"></div></div>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 5"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/bouquet-saison.jpg" alt="Bouquet de saison : jonquilles, orchidées blanches et renoncules orange dans un vase en verre" loading="lazy" decoding="async" draggable="false"></div></div>
           <figcaption><span>N°01</span>Bouquet de saison</figcaption>
         </figure>
       </li>
-      <li class="gallery__item" style="--s: 1.18">
+      <li class="gallery__item" style="--s: 1.1">
         <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 3 / 4"><svg class="ph__art" viewBox="0 0 200 280" aria-hidden="true"><use href="#pot-plant"/><use href="#pot-pot"/></svg><img src="assets/photos/carnet-2.jpg" alt="Plante rare" loading="lazy" decoding="async" draggable="false"></div></div>
-          <figcaption><span>N°02</span>Plante rare</figcaption>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 3 / 4"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/bouquet-mariee.jpg" alt="Bouquet de mariée de roses blanches et de freesias, tenu par la mariée" loading="lazy" decoding="async" draggable="false"></div></div>
+          <figcaption><span>N°02</span>Bouquet de mariée</figcaption>
         </figure>
       </li>
-      <li class="gallery__item" style="--s: .86">
+      <li class="gallery__item" style="--s: 0.9">
         <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 150 220" aria-hidden="true"><use href="#cloche"/></svg><img src="assets/photos/carnet-3.jpg" alt="Table de mariage" loading="lazy" decoding="async" draggable="false"></div></div>
-          <figcaption><span>N°03</span>Table de mariage</figcaption>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 90 220" aria-hidden="true"><use href="#bud-plant"/><use href="#bud-pot"/></svg><img src="assets/photos/roses.jpg" alt="Roses roses et rouges posées sur une table" loading="lazy" decoding="async" draggable="false"></div></div>
+          <figcaption><span>N°03</span>Roses roses &amp; rouges</figcaption>
         </figure>
       </li>
-      <li class="gallery__item" style="--s: 1.08">
+      <li class="gallery__item" style="--s: 1.04">
         <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--cream); --ill-b: var(--lavender); --ratio: 4 / 5"><svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg><img src="assets/photos/carnet-4.jpg" alt="Composition d’automne" loading="lazy" decoding="async" draggable="false"></div></div>
-          <figcaption><span>N°04</span>Composition d’automne</figcaption>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--cream); --ill-b: var(--lavender); --ratio: 4 / 5"><svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg><img src="assets/photos/bouquet-seche.jpg" alt="Bouquet de fleurs séchées et de coton dans un vase blanc" loading="lazy" decoding="async" draggable="false"></div></div>
+          <figcaption><span>N°04</span>Bouquet de fleurs séchées</figcaption>
         </figure>
       </li>
-      <li class="gallery__item" style="--s: 1.24">
+      <li class="gallery__item" style="--s: 1">
         <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 2 / 3"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/carnet-5.jpg" alt="Bouquet de mariée" loading="lazy" decoding="async" draggable="false"></div></div>
-          <figcaption><span>N°05</span>Bouquet de mariée</figcaption>
-        </figure>
-      </li>
-      <li class="gallery__item" style="--s: .92">
-        <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 5 / 4"><svg class="ph__art" viewBox="0 0 90 220" aria-hidden="true"><use href="#bud-plant"/><use href="#bud-pot"/></svg><img src="assets/photos/carnet-6.jpg" alt="Vitrine florale" loading="lazy" decoding="async" draggable="false"></div></div>
-          <figcaption><span>N°06</span>Vitrine florale</figcaption>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/bouquet-boite.jpg" alt="Bouquet de roses pêche, renoncules et eucalyptus dans une boîte, tenu à deux mains" loading="lazy" decoding="async" draggable="false"></div></div>
+          <figcaption><span>N°05</span>Bouquet en boîte</figcaption>
         </figure>
       </li>
     </ul>
@@ -645,7 +646,7 @@
 <section class="section contact" id="contact" aria-labelledby="contact-title">
   <div class="container contact__grid">
     <div class="contact__intro">
-      <p class="kicker" data-reveal>Commande &amp; contact — N°06</p>
+      <p class="kicker" data-reveal>Commande &amp; contact</p>
       <h2 class="h2" id="contact-title" data-split>Racontez-nous <em>votre moment</em></h2>
       <p class="lead" data-reveal>Un bouquet pour demain, un mariage l’an prochain&#8239;: écrivez-nous, nous revenons vers vous avec une proposition sur mesure.</p>
 

@@ -893,6 +893,30 @@ const CONSENT_MAX_AGE = 1000 * 60 * 60 * 24 * 182;
   }
   $$('[data-cookie-settings]').forEach((btn) => btn.addEventListener('click', () => openBanner(true)));
 
+  /* Espace client : si une session est ouverte, les liens mènent à « Mon espace » */
+  const session = (() => {
+    try {
+      const key = Object.keys(localStorage).find((k) => /^sb-.+-auth-token$/.test(k));
+      return key ? JSON.parse(localStorage.getItem(key)) : null;
+    } catch (e) { return null; }
+  })();
+  const loggedIn = Boolean(session);
+  if (session && session.user && form) {
+    const meta = session.user.user_metadata || {};
+    const name = $('#f-name', form);
+    const email = $('#f-email', form);
+    if (name && !name.value && meta.name) name.value = meta.name;
+    if (email && !email.value && session.user.email) email.value = session.user.email;
+  }
+  if (loggedIn) {
+    $$('[data-account-link]').forEach((a) => {
+      a.setAttribute('href', a.getAttribute('href').replace('connexion.html', 'compte.html'));
+      if (a.hasAttribute('aria-label')) a.setAttribute('aria-label', 'Mon espace client');
+      const label = $('[data-account-label]', a);
+      if (label) label.textContent = 'Mon espace';
+    });
+  }
+
   /* Année du pied de page */
   const year = $('[data-year]');
   if (year) year.textContent = new Date().getFullYear();
