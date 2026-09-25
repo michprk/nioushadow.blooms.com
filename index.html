@@ -3,29 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nioushadow Blooms — Fleuriste-atelier au Mont des Arts, Bruxelles</title>
-  <meta name="description" content="Nioushadow Blooms, fleuriste-atelier au Mont des Arts à Bruxelles : bouquets sur mesure, plantes rares, mariages, événements et abonnements floraux. Commandes 24 h à l’avance, livraison dans tout Bruxelles.">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <title>Nioushadow Blooms · Fleuriste au Mont des Arts, Bruxelles</title>
+  <meta name="description" content="Fleuriste-atelier au Mont des Arts, Bruxelles : bouquets sur mesure, plantes rares, mariages, événements et abonnements. Commandes 24 h à l’avance.">
+  <link rel="canonical" href="https://www.nioushadow-blooms.com/">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#f9f5f1">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
+  <!-- Icônes -->
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Partage sur les réseaux -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_BE">
-  <meta property="og:title" content="Nioushadow Blooms — Fleuriste-atelier à Bruxelles">
+  <meta property="og:site_name" content="Nioushadow Blooms">
+  <meta property="og:title" content="Nioushadow Blooms · Fleuriste-atelier à Bruxelles">
   <meta property="og:description" content="Bouquets sur mesure, plantes rares, mariages et événements. Mont des Arts 6, 1000 Bruxelles.">
-  <meta property="og:image" content="https://www.nioushadow-blooms.com/assets/img/og.jpg">
   <meta property="og:url" content="https://www.nioushadow-blooms.com/">
+  <meta property="og:image" content="https://www.nioushadow-blooms.com/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Le nom Nioushadow Blooms posé sur des étagères dorées, entre vases, livres et plantes">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nioushadow Blooms · Fleuriste-atelier à Bruxelles">
+  <meta name="twitter:description" content="Bouquets sur mesure, plantes rares, mariages et événements. Mont des Arts 6, 1000 Bruxelles.">
+  <meta name="twitter:image" content="https://www.nioushadow-blooms.com/assets/img/og.jpg">
 
   <link rel="preload" href="assets/fonts/fraunces-normal-300-700-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/fraunces-italic-300-700-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
-
-  <script>
-    // Active les animations ; si le script principal ne se charge pas, on affiche tout normalement.
-    document.documentElement.classList.add('js');
-    setTimeout(function () {
-      if (!document.documentElement.classList.contains('js-ready')) document.documentElement.classList.remove('js');
-    }, 4000);
-  </script>
+  <script src="assets/js/boot.js"></script>
 
   <script type="application/ld+json">
   {
@@ -205,6 +215,7 @@
   </symbol>
   <symbol id="arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="m13 5 7 7-7 7"/></symbol>
   <symbol id="arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+  <symbol id="arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H4"/><path d="m11 5-7 7 7 7"/></symbol>
   <symbol id="chev-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></symbol>
   <symbol id="chev-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
   <symbol id="instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="19" height="19" x="2.5" y="2.5" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
@@ -217,7 +228,7 @@
 <!-- ===================================================================
      Bandeau défilant
      =================================================================== -->
-<div class="ticker" role="note" aria-label="Atelier floral au Mont des Arts, Bruxelles. Commandes 24 heures à l’avance. Livraison partout à Bruxelles.">
+<aside class="ticker" aria-label="Atelier floral au Mont des Arts, Bruxelles. Commandes 24 heures à l’avance. Livraison partout à Bruxelles.">
   <div class="ticker__track" aria-hidden="true">
     <div class="ticker__group">
       <span>Atelier floral au Mont des Arts, Bruxelles</span><svg><use href="#leaf"/></svg>
@@ -232,7 +243,7 @@
       <span>Bouquets sur mesure · Plantes rares · Mariages &amp; événements</span><svg><use href="#leaf"/></svg>
     </div>
   </div>
-</div>
+</aside>
 
 <!-- ===================================================================
      Navigation
@@ -254,7 +265,9 @@
       <a class="btn btn--ghost btn--square" href="https://www.instagram.com/nioushadow/" target="_blank" rel="noopener" aria-label="Instagram (nouvel onglet)">
         <svg aria-hidden="true"><use href="#instagram"/></svg>
       </a>
-      <a class="btn btn--ghost nav__cta" href="#contact">Commander</a>
+      <a class="btn btn--ghost btn--square" href="tel:+32477735659" aria-label="Appeler le +32 477 73 56 59">
+        <svg aria-hidden="true"><use href="#phone"/></svg>
+      </a>
       <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
         <span class="burger__lines" aria-hidden="true"><span></span><span></span></span>
         <span class="sr-only">Ouvrir le menu</span>
@@ -274,6 +287,7 @@
   </nav>
   <div class="menu__info">
     <a href="tel:+32477735659">+32 477 73 56 59</a>
+    <a href="https://www.instagram.com/nioushadow/" target="_blank" rel="noopener">Instagram @nioushadow</a>
     <span>Mont des Arts 6, 1er étage — Bruxelles</span>
   </div>
   <div class="menu__shelf" aria-hidden="true">
@@ -300,7 +314,7 @@
         <figure class="frame frame--h1">
           <div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 3">
             <svg class="ph__art" viewBox="0 0 200 260"><use href="#bouquet"/></svg>
-            <img src="assets/photos/hero-1.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()">
+            <img src="assets/photos/hero-1.jpg" alt="" loading="lazy" decoding="async">
           </div>
         </figure>
         <svg class="ill ill--books" viewBox="0 0 150 70"><use href="#books"/></svg>
@@ -317,7 +331,7 @@
         <figure class="frame frame--h1">
           <div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 3">
             <svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg>
-            <img src="assets/photos/hero-1.jpg" alt="Bouquet de saison composé à l’atelier Nioushadow Blooms" fetchpriority="high" decoding="async" onerror="this.remove()">
+            <img src="assets/photos/hero-1.jpg" alt="Bouquet de saison composé à l’atelier Nioushadow Blooms" fetchpriority="high" decoding="async">
           </div>
         </figure>
         <svg class="ill ill--books" viewBox="0 0 150 70" aria-hidden="true"><use href="#books"/></svg>
@@ -334,7 +348,7 @@
       <figure class="frame frame--h2">
         <div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 3 / 4">
           <svg class="ph__art" viewBox="0 0 90 220" aria-hidden="true"><use href="#bud-plant"/><use href="#bud-pot"/></svg>
-          <img src="assets/photos/hero-2.jpg" alt="Détail d’une fleur de saison" decoding="async" onerror="this.remove()">
+          <img src="assets/photos/hero-2.jpg" alt="Détail d’une fleur de saison" decoding="async">
         </div>
       </figure>
       <svg class="ill ill--bud" viewBox="0 0 90 220" aria-hidden="true"><use class="sway" href="#bud-plant"/><use href="#bud-pot"/></svg>
@@ -353,7 +367,12 @@
       <li><a href="#abonnement"><span>Abonnements floraux</span><svg aria-hidden="true"><use href="#arrow-right"/></svg></a></li>
     </ul>
     <div class="hero__ctas" data-hero-fade>
-      <a class="btn btn--ink" href="#contact">Commander un bouquet <svg class="btn__arrow" aria-hidden="true"><use href="#arrow-right"/></svg></a>
+      <a class="cta" href="#contact" data-cta data-cta-origin>
+        <span class="cta__bg" aria-hidden="true"></span>
+        <svg class="cta__flower" aria-hidden="true"><use href="#flower"/></svg>
+        <span class="cta__label" data-text="Commander un bouquet"><span>Commander un bouquet</span></span>
+        <span class="cta__arrow" aria-hidden="true"><svg><use href="#arrow-right"/></svg><svg><use href="#arrow-right"/></svg></span>
+      </a>
       <a class="hero__phone ulink" href="tel:+32477735659"><svg aria-hidden="true"><use href="#phone"/></svg>+32 477 73 56 59</a>
     </div>
   </div>
@@ -368,7 +387,7 @@
       <figure class="frame frame--lg" data-reveal="frame">
         <div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 5">
           <svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg>
-          <img src="assets/photos/atelier.jpg" alt="Composition florale en préparation à l’atelier" loading="lazy" decoding="async" onerror="this.remove()">
+          <img src="assets/photos/atelier.jpg" alt="Composition florale en préparation à l’atelier" loading="lazy" decoding="async">
         </div>
       </figure>
       <div class="note" data-reveal="note" aria-hidden="true">
@@ -412,7 +431,7 @@
           <span class="index__num">01</span>
           <span class="index__title">Bouquets sur mesure</span>
           <span class="index__desc">Des bouquets libres et généreux, composés selon les arrivages de la semaine et vos envies. À offrir, ou à s’offrir.</span>
-          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/creation-bouquets.jpg" alt="" loading="lazy" onerror="this.remove()"></span></span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/creation-bouquets.jpg" alt="" loading="lazy"></span></span>
           <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
         </a>
       </li>
@@ -421,7 +440,7 @@
           <span class="index__num">02</span>
           <span class="index__title">Plantes rares</span>
           <span class="index__desc">Des plantes choisies pour leur caractère — feuillages graphiques, espèces peu communes — prêtes à habiter votre intérieur.</span>
-          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--cream); --ill-b: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 280" aria-hidden="true"><use href="#pot-plant"/><use href="#pot-pot"/></svg><img src="assets/photos/creation-plantes.jpg" alt="" loading="lazy" onerror="this.remove()"></span></span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--cream); --ill-b: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 280" aria-hidden="true"><use href="#pot-plant"/><use href="#pot-pot"/></svg><img src="assets/photos/creation-plantes.jpg" alt="" loading="lazy"></span></span>
           <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
         </a>
       </li>
@@ -430,7 +449,7 @@
           <span class="index__num">03</span>
           <span class="index__title">Mariages</span>
           <span class="index__desc">De la boutonnière à l’arche fleurie&#8239;: une scénographie pensée avec vous, du premier rendez-vous au jour&nbsp;J.</span>
-          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/creation-mariages.jpg" alt="" loading="lazy" onerror="this.remove()"></span></span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/creation-mariages.jpg" alt="" loading="lazy"></span></span>
           <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
         </a>
       </li>
@@ -439,7 +458,7 @@
           <span class="index__num">04</span>
           <span class="index__title">Événements &amp; entreprises</span>
           <span class="index__desc">Dîners, lancements, vitrines, réceptions, expériences VIP&#8239;: des compositions à la mesure du lieu et de l’occasion.</span>
-          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 150 220" aria-hidden="true"><use href="#cloche"/></svg><img src="assets/photos/creation-evenements.jpg" alt="" loading="lazy" onerror="this.remove()"></span></span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 150 220" aria-hidden="true"><use href="#cloche"/></svg><img src="assets/photos/creation-evenements.jpg" alt="" loading="lazy"></span></span>
           <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
         </a>
       </li>
@@ -448,7 +467,7 @@
           <span class="index__num">05</span>
           <span class="index__title">Abonnements floraux</span>
           <span class="index__desc">Un bouquet frais livré à intervalle régulier, chez vous ou au bureau, partout dans Bruxelles.</span>
-          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 1"><svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg><img src="assets/photos/creation-abonnements.jpg" alt="" loading="lazy" onerror="this.remove()"></span></span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 1"><svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg><img src="assets/photos/creation-abonnements.jpg" alt="" loading="lazy"></span></span>
           <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
         </a>
       </li>
@@ -460,6 +479,19 @@
     <div class="preview__frame frame"></div>
   </div>
 </section>
+
+<!-- Bandeau de mots (sa vitesse suit le défilement) -->
+<div class="marquee" aria-hidden="true" data-marquee>
+  <div class="marquee__track">
+    <div class="marquee__group">
+      <span>Bouquets sur mesure</span><svg class="marquee__flower"><use href="#flower"/></svg>
+      <em>Plantes rares</em><svg class="marquee__flower"><use href="#flower"/></svg>
+      <span>Mariages</span><svg class="marquee__flower"><use href="#flower"/></svg>
+      <em>Événements</em><svg class="marquee__flower"><use href="#flower"/></svg>
+      <span>Abonnements</span><svg class="marquee__flower"><use href="#flower"/></svg>
+    </div>
+  </div>
+</div>
 
 <!-- ===================================================================
      ABONNEMENT
@@ -482,7 +514,7 @@
           <p class="rhythm__note" aria-live="polite" data-rhythm-note>Environ 52 bouquets par an — idéal pour un hall, une boutique ou un restaurant.</p>
         </fieldset>
 
-        <a class="btn btn--ink" href="#contact" data-reveal data-abo-cta>Démarrer un abonnement <svg class="btn__arrow" aria-hidden="true"><use href="#arrow-right"/></svg></a>
+        <a class="wavy" href="#contact" data-reveal data-abo-cta>Choisir ce rythme</a>
       </div>
 
       <div class="abo__media" aria-hidden="true">
@@ -490,14 +522,14 @@
         <figure class="frame abo__big" data-reveal="frame">
           <div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 4 / 5">
             <svg class="ph__art" viewBox="0 0 180 320"><use href="#vase-plant"/><use href="#vase-pot"/></svg>
-            <img src="assets/photos/abonnement-1.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()">
+            <img src="assets/photos/abonnement-1.jpg" alt="" loading="lazy" decoding="async">
           </div>
         </figure>
         <div class="abo__stack">
           <figure class="frame abo__small" data-reveal="frame" style="--d: .15s">
             <div class="ph" style="--ph-bg: var(--cream); --ratio: 1">
               <svg class="ph__art" viewBox="0 0 90 220"><use href="#bud-plant"/><use href="#bud-pot"/></svg>
-              <img src="assets/photos/abonnement-2.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()">
+              <img src="assets/photos/abonnement-2.jpg" alt="" loading="lazy" decoding="async">
             </div>
           </figure>
           <svg class="abo__books" viewBox="0 0 150 70"><use href="#books"/></svg>
@@ -561,42 +593,42 @@
     </div>
   </div>
 
-  <div class="gallery" data-gallery>
+  <div class="gallery" data-gallery data-reveal="gallery">
     <div class="gallery__band" aria-hidden="true"></div>
     <ul class="gallery__track" data-gallery-track tabindex="0" aria-label="Galerie de compositions, faire défiler horizontalement">
       <li class="gallery__item" style="--s: 1">
         <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 5"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/carnet-1.jpg" alt="Bouquet de saison" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 5"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/carnet-1.jpg" alt="Bouquet de saison" loading="lazy" decoding="async" draggable="false"></div></div>
           <figcaption><span>N°01</span>Bouquet de saison</figcaption>
         </figure>
       </li>
       <li class="gallery__item" style="--s: 1.18">
         <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 3 / 4"><svg class="ph__art" viewBox="0 0 200 280" aria-hidden="true"><use href="#pot-plant"/><use href="#pot-pot"/></svg><img src="assets/photos/carnet-2.jpg" alt="Plante rare" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 3 / 4"><svg class="ph__art" viewBox="0 0 200 280" aria-hidden="true"><use href="#pot-plant"/><use href="#pot-pot"/></svg><img src="assets/photos/carnet-2.jpg" alt="Plante rare" loading="lazy" decoding="async" draggable="false"></div></div>
           <figcaption><span>N°02</span>Plante rare</figcaption>
         </figure>
       </li>
       <li class="gallery__item" style="--s: .86">
         <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 150 220" aria-hidden="true"><use href="#cloche"/></svg><img src="assets/photos/carnet-3.jpg" alt="Table de mariage" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 150 220" aria-hidden="true"><use href="#cloche"/></svg><img src="assets/photos/carnet-3.jpg" alt="Table de mariage" loading="lazy" decoding="async" draggable="false"></div></div>
           <figcaption><span>N°03</span>Table de mariage</figcaption>
         </figure>
       </li>
       <li class="gallery__item" style="--s: 1.08">
         <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--cream); --ill-b: var(--lavender); --ratio: 4 / 5"><svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg><img src="assets/photos/carnet-4.jpg" alt="Composition d’automne" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--cream); --ill-b: var(--lavender); --ratio: 4 / 5"><svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg><img src="assets/photos/carnet-4.jpg" alt="Composition d’automne" loading="lazy" decoding="async" draggable="false"></div></div>
           <figcaption><span>N°04</span>Composition d’automne</figcaption>
         </figure>
       </li>
       <li class="gallery__item" style="--s: 1.24">
         <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 2 / 3"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/carnet-5.jpg" alt="Bouquet de mariée" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 2 / 3"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/carnet-5.jpg" alt="Bouquet de mariée" loading="lazy" decoding="async" draggable="false"></div></div>
           <figcaption><span>N°05</span>Bouquet de mariée</figcaption>
         </figure>
       </li>
       <li class="gallery__item" style="--s: .92">
         <figure>
-          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 5 / 4"><svg class="ph__art" viewBox="0 0 90 220" aria-hidden="true"><use href="#bud-plant"/><use href="#bud-pot"/></svg><img src="assets/photos/carnet-6.jpg" alt="Vitrine florale" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 5 / 4"><svg class="ph__art" viewBox="0 0 90 220" aria-hidden="true"><use href="#bud-plant"/><use href="#bud-pot"/></svg><img src="assets/photos/carnet-6.jpg" alt="Vitrine florale" loading="lazy" decoding="async" draggable="false"></div></div>
           <figcaption><span>N°06</span>Vitrine florale</figcaption>
         </figure>
       </li>
@@ -640,6 +672,8 @@
 
     <div class="contact__panel" data-reveal="frame">
       <form class="form" data-form novalidate>
+        <p class="sr-only" role="status" aria-live="polite" data-form-status></p>
+
         <fieldset class="seg">
           <legend>Occasion</legend>
           <div class="seg__opts">
@@ -654,24 +688,40 @@
         <div class="form__row">
           <div class="field">
             <label for="f-name">Nom <span aria-hidden="true">*</span></label>
-            <input class="input" id="f-name" name="nom" type="text" autocomplete="name" required placeholder="Votre nom">
-            <p class="field__error" data-error-for="f-name">Merci d’indiquer votre nom.</p>
+            <input class="input" id="f-name" name="nom" type="text" autocomplete="name" required minlength="2" maxlength="80" placeholder="Votre nom" aria-describedby="err-name">
+            <p class="field__error" id="err-name" data-error></p>
           </div>
           <div class="field">
             <label for="f-email">E-mail <span aria-hidden="true">*</span></label>
-            <input class="input" id="f-email" name="email" type="email" autocomplete="email" required placeholder="vous@exemple.be">
-            <p class="field__error" data-error-for="f-email">Merci d’indiquer un e-mail valide.</p>
+            <input class="input" id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" pattern="[^@\s]+@[^@\s]+\.[A-Za-z]{2,}" placeholder="vous@exemple.be" aria-describedby="err-email">
+            <p class="field__error" id="err-email" data-error></p>
           </div>
         </div>
         <div class="field">
           <label for="f-date">Date souhaitée</label>
-          <input class="input" id="f-date" name="date" type="date" data-date>
+          <input class="input" id="f-date" name="date" type="date" data-date aria-describedby="hint-date err-date">
+          <p class="field__hint" id="hint-date">Au plus tôt demain : nous composons sur commande, 24&nbsp;h à l’avance.</p>
+          <p class="field__error" id="err-date" data-error></p>
         </div>
         <div class="field">
           <label for="f-msg">Votre message</label>
-          <textarea class="input" id="f-msg" name="message" rows="4" placeholder="Couleurs, style, budget, lieu de livraison…" data-message></textarea>
+          <textarea class="input" id="f-msg" name="message" rows="4" maxlength="1000" placeholder="Couleurs, style, budget, lieu de livraison…" data-message aria-describedby="count-msg err-msg"></textarea>
+          <p class="field__count" id="count-msg" data-count>0 / 1000</p>
+          <p class="field__error" id="err-msg" data-error></p>
         </div>
-        <div class="hp" aria-hidden="true"><label>Ne pas remplir <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+        <div class="field">
+          <label class="check" for="f-consent">
+            <input id="f-consent" name="consentement" type="checkbox" value="oui" required aria-describedby="err-consent">
+            <span class="check__box" aria-hidden="true"><svg><use href="#check"/></svg></span>
+            <span>J’accepte que Nioushadow Blooms utilise ces informations pour répondre à ma demande (<a href="confidentialite.html">politique de confidentialité</a>).</span>
+          </label>
+          <p class="field__error" id="err-consent" data-error></p>
+        </div>
+
+        <!-- Anti-spam : champ piège invisible pour les humains -->
+        <div class="hp" aria-hidden="true"><label>Ne pas remplir ce champ <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+
+        <p class="form__alert" role="alert" data-form-alert hidden></p>
 
         <button class="btn btn--ink form__submit" type="submit">
           <span>Envoyer ma demande · <span data-occasion-label>Bouquet</span></span>
@@ -737,9 +787,23 @@
 
   <div class="container footer__meta">
     <span>© <span data-year>2026</span> Nioushadow Blooms — Fleuriste à Bruxelles</span>
-    <span>Fait main, au fil des saisons</span>
+    <nav class="footer__legal" aria-label="Informations légales">
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="cgu.html">CGU &amp; mentions légales</a>
+      <button class="linkbtn" type="button" data-cookie-settings>Gérer les cookies</button>
+    </nav>
   </div>
 </footer>
+
+<!-- Le même CTA, qui reste à portée de main pendant la lecture -->
+<div class="cta-dock" data-cta-dock inert>
+  <a class="cta" href="#contact" data-cta>
+    <span class="cta__bg" aria-hidden="true"></span>
+    <svg class="cta__flower" aria-hidden="true"><use href="#flower"/></svg>
+    <span class="cta__label" data-text="Commander un bouquet"><span>Commander un bouquet</span></span>
+    <span class="cta__arrow" aria-hidden="true"><svg><use href="#arrow-right"/></svg><svg><use href="#arrow-right"/></svg></span>
+  </a>
+</div>
 
 <script src="assets/js/main.js" defer></script>
 </body>
