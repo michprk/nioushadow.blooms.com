@@ -3,4 +3,4 @@ Allow: /
 Disallow: /404.html
 Disallow: /compte.html
 
-Sitemap: https://www.nioushadow-blooms.com/sitemap.xml
+Sitemap: https://michprk.github.io/nioushadow.blooms.com/sitemap.xml

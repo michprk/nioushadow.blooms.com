@@ -5,7 +5,7 @@
    1. créer un projet sur https://supabase.com (région : Europe, Francfort) ;
    2. Project Settings → API : copier l’« URL » et la clé « anon public » ci-dessous ;
    3. Authentication → URL Configuration : ajouter l’adresse du site
-      (ex. https://www.nioushadow-blooms.com) dans « Site URL » et « Redirect URLs ».
+      (ex. https://michprk.github.io/nioushadow.blooms.com/) dans « Site URL » et « Redirect URLs ».
    La clé « anon » est prévue pour être publique : la sécurité est gérée par Supabase.
    Tant que ces deux lignes sont vides, les pages affichent « bientôt disponible ».
    ========================================================================== */

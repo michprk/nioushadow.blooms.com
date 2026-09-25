@@ -86,7 +86,7 @@ seul : l’espace client s’appuie sur **Supabase** (gratuit). Pour l’activer
 2. *Project Settings → API* : copier l’**URL** du projet et la clé **anon public**.
 3. Les coller en haut de `assets/js/auth.js` (`SUPABASE_URL` et `SUPABASE_ANON_KEY`).
 4. *Authentication → URL Configuration* : mettre l’adresse du site dans **Site URL** et
-   **Redirect URLs** (par ex. `https://www.nioushadow-blooms.com/*`).
+   **Redirect URLs** (par ex. `https://michprk.github.io/nioushadow.blooms.com/*`).
 5. *Authentication → Emails* : traduire les e-mails de confirmation en français si besoin.
 
 Tant que ce n’est pas fait, la page de connexion affiche « L’espace client ouvre très bientôt »
@@ -100,10 +100,19 @@ pas repris : les clients recréent un compte.
   ajoutent les en-têtes de sécurité : HSTS, CSP stricte, anti-iframe, etc.
 - Sur **GitHub Pages** : *Settings → Pages → Enforce HTTPS*.
 
-## Mettre en ligne
+## Mettre en ligne (GitHub Pages, gratuit)
 
-Le site doit être à la **racine du domaine** (par ex. `https://www.nioushadow-blooms.com/`) pour
-que la page 404 fonctionne partout. Il marche sur n’importe quel hébergement statique.
+1. Sur GitHub, ouvrir le dépôt → **Settings** → **Pages**.
+2. *Source* : **Deploy from a branch** ; *Branch* : `claude/how-many-plants-site-vxs24q`, dossier **/ (root)** → **Save**.
+3. Attendre 1 à 2 minutes : le site est en ligne sur **https://michprk.github.io/nioushadow.blooms.com/**
+4. Cocher **Enforce HTTPS** sur la même page.
+
+Chaque nouveau « push » sur cette branche met le site à jour automatiquement.
+
+**Nom de domaine** : pour utiliser une adresse comme `nioushadow-blooms.com` (aujourd’hui sur Wix),
+la fleuriste doit faire pointer son domaine vers GitHub Pages (*Settings → Pages → Custom domain*).
+Remplacer alors `https://michprk.github.io/nioushadow.blooms.com` par la nouvelle adresse dans `index.html`, les pages légales,
+`sitemap.xml` et `robots.txt`.
 
 ## Animations
 
