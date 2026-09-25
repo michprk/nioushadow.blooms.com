@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nioushadow Blooms — Fleuriste-atelier au Mont des Arts, Bruxelles</title>
+  <meta name="description" content="Nioushadow Blooms, fleuriste-atelier au Mont des Arts à Bruxelles : bouquets sur mesure, plantes rares, mariages, événements et abonnements floraux. Commandes 24 h à l’avance, livraison dans tout Bruxelles.">
+  <meta name="theme-color" content="#f9f5f1">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_BE">
+  <meta property="og:title" content="Nioushadow Blooms — Fleuriste-atelier à Bruxelles">
+  <meta property="og:description" content="Bouquets sur mesure, plantes rares, mariages et événements. Mont des Arts 6, 1000 Bruxelles.">
+  <meta property="og:image" content="https://www.nioushadow-blooms.com/assets/img/og.jpg">
+  <meta property="og:url" content="https://www.nioushadow-blooms.com/">
+
+  <link rel="preload" href="assets/fonts/fraunces-normal-300-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/fraunces-italic-300-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Active les animations ; si le script principal ne se charge pas, on affiche tout normalement.
+    document.documentElement.classList.add('js');
+    setTimeout(function () {
+      if (!document.documentElement.classList.contains('js-ready')) document.documentElement.classList.remove('js');
+    }, 4000);
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Nioushadow Blooms",
+    "url": "https://www.nioushadow-blooms.com",
+    "telephone": "+32 477 73 56 59",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Mont des Arts 6, 1er étage",
+      "postalCode": "1000",
+      "addressLocality": "Bruxelles",
+      "addressCountry": "BE"
+    },
+    "sameAs": ["https://www.instagram.com/nioushadow/"]
+  }
+  </script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!-- ===================================================================
+     Illustrations (sprite SVG) — trait encre, aplats olive / crème / lavande
+     =================================================================== -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <!-- Vase haut : contenant -->
+  <symbol id="vase-pot" viewBox="0 0 180 320" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path class="b" d="M62 214 C50 236 48 262 54 290 C57 304 64 314 72 316 L108 316 C116 314 123 304 126 290 C132 262 130 236 118 214 Z"/>
+    <path class="c" d="M50.7 262 C76 270 104 270 129.3 262 L128.1 277 C104 285 76 285 51.9 277 Z"/>
+    <path d="M58 214 H122"/>
+  </symbol>
+  <!-- Vase haut : branches -->
+  <symbol id="vase-plant" viewBox="0 0 180 320" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M90 216 C88 170 72 124 46 84"/>
+    <path d="M90 216 C92 160 104 112 132 66"/>
+    <path d="M90 216 C90 160 88 100 92 44"/>
+    <path d="M91 196 C104 182 128 172 150 150"/>
+    <path d="M132 66 L140 57 M132 66 L135 49 M132 66 L124 55 M132 66 L145 69"/>
+    <g class="a">
+      <path transform="translate(77 148) rotate(-152)" d="M0 0 C8 -10 26 -10 36 0 C26 10 8 10 0 0 Z"/>
+      <path transform="translate(101 137) rotate(-32)" d="M0 0 C8 -10 26 -10 36 0 C26 10 8 10 0 0 Z"/>
+      <path transform="translate(90 104) rotate(-128)" d="M0 0 C6 -8 20 -8 28 0 C20 8 6 8 0 0 Z"/>
+      <path transform="translate(118 171) rotate(-18)" d="M0 0 C6 -8 20 -8 28 0 C20 8 6 8 0 0 Z"/>
+      <path transform="translate(149 151) rotate(-44)" d="M0 0 C6 -9 21 -9 29 0 C21 9 6 9 0 0 Z"/>
+      <path transform="translate(46 84) rotate(-38) translate(0 -4)" d="M-11 0 C-13 -14 -9 -22 -4 -25 L0 -15 L4 -25 C9 -22 13 -14 11 0 C8 9 -8 9 -11 0 Z"/>
+    </g>
+    <g class="k" stroke="none">
+      <circle cx="140" cy="57" r="4"/><circle cx="135" cy="48" r="3.4"/><circle cx="123.5" cy="54" r="3.4"/><circle cx="146" cy="69" r="3"/>
+    </g>
+    <g transform="translate(92 36)">
+      <g class="c">
+        <circle cx="0" cy="-10" r="10"/><circle cx="9.5" cy="-3" r="10"/><circle cx="5.9" cy="8" r="10"/><circle cx="-5.9" cy="8" r="10"/><circle cx="-9.5" cy="-3" r="10"/>
+      </g>
+      <circle class="k" r="6" stroke="none"/>
+    </g>
+  </symbol>
+
+  <!-- Pot à grandes feuilles -->
+  <symbol id="pot-pot" viewBox="0 0 200 280" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path class="b" d="M60 204 L140 204 L131 276 L69 276 Z"/>
+    <path class="b" d="M52 186 H148 V204 H52 Z"/>
+    <path d="M65 234 C76 228 88 240 100 234 C112 228 124 240 135 234"/>
+  </symbol>
+  <symbol id="pot-plant" viewBox="0 0 200 280" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <g class="a">
+      <g transform="translate(100 190) rotate(-64) scale(.7)"><path d="M0 0 C-30 -30 -32 -92 0 -124 C32 -92 30 -30 0 0 Z"/><path d="M0 -4 L0 -116 M0 -40 L-14 -56 M0 -62 L14 -78 M0 -84 L-12 -98"/></g>
+      <g transform="translate(100 190) rotate(62) scale(.72)"><path d="M0 0 C-30 -30 -32 -92 0 -124 C32 -92 30 -30 0 0 Z"/><path d="M0 -4 L0 -116 M0 -40 L14 -56 M0 -62 L-14 -78 M0 -84 L12 -98"/></g>
+      <g transform="translate(100 190) rotate(-30) scale(.95)"><path d="M0 0 C-30 -30 -32 -92 0 -124 C32 -92 30 -30 0 0 Z"/><path d="M0 -4 L0 -116 M0 -40 L-14 -56 M0 -62 L14 -78 M0 -84 L-12 -98"/></g>
+      <g transform="translate(100 190) rotate(28) scale(.9)"><path d="M0 0 C-30 -30 -32 -92 0 -124 C32 -92 30 -30 0 0 Z"/><path d="M0 -4 L0 -116 M0 -40 L14 -56 M0 -62 L-14 -78 M0 -84 L12 -98"/></g>
+      <g transform="translate(100 190) rotate(-2) scale(1.08)"><path d="M0 0 C-30 -30 -32 -92 0 -124 C32 -92 30 -30 0 0 Z"/><path d="M0 -4 L0 -116 M0 -40 L-14 -56 M0 -62 L14 -78 M0 -84 L-12 -98"/></g>
+    </g>
+  </symbol>
+
+  <!-- Soliflore -->
+  <symbol id="bud-pot" viewBox="0 0 90 220" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path class="c" d="M37 132 L37 154 C23 160 19 172 21 186 C23 200 31 206 46 206 C61 206 69 200 71 186 C73 172 69 160 55 154 L55 132 Z"/>
+    <path d="M33 132 H59"/>
+  </symbol>
+  <symbol id="bud-plant" viewBox="0 0 90 220" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M46 134 C45 100 48 70 58 46 C62 36 68 32 73 37"/>
+    <path d="M45 134 C40 108 32 90 18 78"/>
+    <path d="M47 134 C52 116 60 104 72 96"/>
+    <g class="a">
+      <path transform="translate(74 42) rotate(14)" d="M-9 0 C-9 11 -5 19 0 22 C5 19 9 11 9 0 C5 -3 -5 -3 -9 0 Z"/>
+      <path transform="translate(52 88) rotate(-120)" d="M0 0 C5 -7 17 -7 24 0 C17 7 5 7 0 0 Z"/>
+    </g>
+  </symbol>
+
+  <!-- Cloche de verre -->
+  <symbol id="cloche" viewBox="0 0 150 220" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M75 204 C75 172 76 140 80 104"/>
+    <g class="a">
+      <path transform="translate(75.3 186) rotate(-150)" d="M0 0 C5 -6 15 -6 20 0 C15 6 5 6 0 0 Z"/>
+      <path transform="translate(75.3 186) rotate(-30)" d="M0 0 C5 -6 15 -6 20 0 C15 6 5 6 0 0 Z"/>
+      <path transform="translate(75.8 166) rotate(-148)" d="M0 0 C5 -6 15 -6 19 0 C15 6 5 6 0 0 Z"/>
+      <path transform="translate(75.8 166) rotate(-32)" d="M0 0 C5 -6 15 -6 19 0 C15 6 5 6 0 0 Z"/>
+      <path transform="translate(76.7 146) rotate(-145)" d="M0 0 C4 -5 12 -5 16 0 C12 5 4 5 0 0 Z"/>
+      <path transform="translate(76.7 146) rotate(-35)" d="M0 0 C4 -5 12 -5 16 0 C12 5 4 5 0 0 Z"/>
+      <path transform="translate(78 126) rotate(-140)" d="M0 0 C3 -4 10 -4 13 0 C10 4 3 4 0 0 Z"/>
+      <path transform="translate(78 126) rotate(-40)" d="M0 0 C3 -4 10 -4 13 0 C10 4 3 4 0 0 Z"/>
+      <path transform="translate(80 106) rotate(-90)" d="M0 0 C3 -4 9 -4 12 0 C9 4 3 4 0 0 Z"/>
+    </g>
+    <path class="glass" d="M30 204 L30 100 C30 40 120 40 120 100 L120 204"/>
+    <path d="M42 176 L42 104 C42 86 50 72 62 64" stroke="#f9f5f1" stroke-width="3"/>
+    <circle class="a" cx="75" cy="48" r="7"/>
+    <path class="d" d="M16 204 H134 V214 H16 Z"/>
+  </symbol>
+
+  <!-- Pile de livres -->
+  <symbol id="books" viewBox="0 0 150 70" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path class="b" d="M4 48 H146 V68 H4 Z"/><path d="M14 48 V68 M136 48 V68"/>
+    <path class="d" d="M14 30 H138 V48 H14 Z"/><path d="M24 31 V47 M128 31 V47" stroke="#f9f5f1"/>
+    <path class="c" d="M8 12 H132 V30 H8 Z"/><path d="M18 12 V30 M122 12 V30"/>
+  </symbol>
+
+  <!-- Bouquet emballé -->
+  <symbol id="bouquet" viewBox="0 0 200 260" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M100 200 L70 74 M100 200 L100 54 M100 200 L132 82 M100 200 L150 114 M100 200 L56 112 M100 200 L118 104"/>
+    <g class="a">
+      <path transform="translate(86 132) rotate(-118)" d="M0 0 C7 -9 23 -9 32 0 C23 9 7 9 0 0 Z"/>
+      <path transform="translate(114 128) rotate(-58)" d="M0 0 C7 -9 23 -9 32 0 C23 9 7 9 0 0 Z"/>
+      <path transform="translate(128 140) rotate(-18)" d="M0 0 C7 -9 23 -9 30 0 C23 9 7 9 0 0 Z"/>
+      <path transform="translate(72 142) rotate(-165)" d="M0 0 C7 -9 23 -9 30 0 C23 9 7 9 0 0 Z"/>
+      <path transform="translate(100 56)" d="M-12 0 C-14 -15 -10 -24 -4 -27 L0 -16 L4 -27 C10 -24 14 -15 12 0 C9 10 -9 10 -12 0 Z"/>
+      <path transform="translate(150 114) rotate(32)" d="M-10 0 C-12 -13 -8 -21 -3 -23 L0 -14 L3 -23 C8 -21 12 -13 10 0 C7 8 -7 8 -10 0 Z"/>
+    </g>
+    <g transform="translate(70 74)">
+      <g class="c"><circle cx="0" cy="-11" r="11"/><circle cx="10.5" cy="-3.4" r="11"/><circle cx="6.5" cy="8.9" r="11"/><circle cx="-6.5" cy="8.9" r="11"/><circle cx="-10.5" cy="-3.4" r="11"/></g>
+      <circle class="k" r="6.5" stroke="none"/>
+    </g>
+    <g transform="translate(132 82)">
+      <g class="b"><circle cx="0" cy="-9" r="9"/><circle cx="8.6" cy="-2.8" r="9"/><circle cx="5.3" cy="7.3" r="9"/><circle cx="-5.3" cy="7.3" r="9"/><circle cx="-8.6" cy="-2.8" r="9"/></g>
+      <circle class="k" r="5" stroke="none"/>
+    </g>
+    <g class="k" stroke="none"><circle cx="56" cy="110" r="4.4"/><circle cx="48" cy="104" r="3.6"/><circle cx="58" cy="100" r="3.4"/><circle cx="47" cy="115" r="3.2"/></g>
+    <circle class="b" cx="118" cy="102" r="9"/><circle class="k" cx="118" cy="102" r="3" stroke="none"/>
+    <path class="b" d="M58 128 L142 128 L110 250 L90 250 Z"/>
+    <path d="M58 128 C80 138 92 148 100 172 C108 148 120 138 142 128"/>
+    <path class="c" d="M100 204 C86 190 76 210 100 206 C124 210 114 190 100 204 Z"/>
+    <path d="M100 206 L91 226 M100 206 L110 228"/>
+  </symbol>
+
+  <!-- Flèche dessinée -->
+  <symbol id="arrow" viewBox="0 0 120 80" fill="none" stroke="#222" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 10 C30 8 58 20 72 40 C82 54 92 64 110 68"/>
+    <path d="M97 57 L110 68 L95 74"/>
+  </symbol>
+
+  <!-- Icônes des étapes -->
+  <symbol id="i-chat" viewBox="0 0 64 64" fill="none" stroke="#222" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path class="a" d="M8 12 H56 V42 H28 L16 53 V42 H8 Z"/>
+    <path d="M18 24 H46 M18 32 H38"/>
+  </symbol>
+  <symbol id="i-shears" viewBox="0 0 64 64" fill="none" stroke="#222" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path class="b" d="M27 42 C30 30 37 18 47 7 C45 20 38 33 32 44 Z"/>
+    <path class="b" d="M37 42 C34 30 27 18 17 7 C19 20 26 33 32 44 Z"/>
+    <circle class="a" cx="22" cy="51" r="8"/><circle class="a" cx="42" cy="51" r="8"/>
+    <circle class="k" cx="32" cy="34" r="2" stroke="none"/>
+  </symbol>
+  <symbol id="i-bike" viewBox="0 0 64 64" fill="none" stroke="#222" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="14" cy="45" r="10"/><circle cx="50" cy="45" r="10"/>
+    <path d="M14 45 L26 28 H42 L50 45 M26 28 L32 45 L42 28 M32 45 H14 M42 28 L40 20 H46 M22 23 H30"/>
+    <path class="a" d="M45 17 H59 L56 27 H48 Z"/>
+    <circle class="c" cx="49" cy="12" r="3.4"/><circle class="c" cx="55.5" cy="11" r="3.4"/>
+  </symbol>
+
+  <!-- Petite fleur (logo) -->
+  <symbol id="flower" viewBox="0 0 24 24">
+    <g fill="#e8d1eb" stroke="#222" stroke-width="1.4"><circle cx="12" cy="6.5" r="4.6"/><circle cx="17.2" cy="10.3" r="4.6"/><circle cx="15.2" cy="16.4" r="4.6"/><circle cx="8.8" cy="16.4" r="4.6"/><circle cx="6.8" cy="10.3" r="4.6"/></g>
+    <circle cx="12" cy="12" r="2.8" fill="#222"/>
+  </symbol>
+
+  <!-- Feuille (Lucide) -->
+  <symbol id="leaf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+  </symbol>
+  <symbol id="arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="m13 5 7 7-7 7"/></symbol>
+  <symbol id="arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></symbol>
+  <symbol id="chev-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="chev-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="19" height="19" x="2.5" y="2.5" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+  <symbol id="clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+</svg>
+
+<!-- ===================================================================
+     Bandeau défilant
+     =================================================================== -->
+<div class="ticker" role="note" aria-label="Atelier floral au Mont des Arts, Bruxelles. Commandes 24 heures à l’avance. Livraison partout à Bruxelles.">
+  <div class="ticker__track" aria-hidden="true">
+    <div class="ticker__group">
+      <span>Atelier floral au Mont des Arts, Bruxelles</span><svg><use href="#leaf"/></svg>
+      <span>Commandes 24&nbsp;h à l’avance</span><svg><use href="#leaf"/></svg>
+      <span>Livraison partout à Bruxelles</span><svg><use href="#leaf"/></svg>
+      <span>Bouquets sur mesure · Plantes rares · Mariages &amp; événements</span><svg><use href="#leaf"/></svg>
+    </div>
+    <div class="ticker__group">
+      <span>Atelier floral au Mont des Arts, Bruxelles</span><svg><use href="#leaf"/></svg>
+      <span>Commandes 24&nbsp;h à l’avance</span><svg><use href="#leaf"/></svg>
+      <span>Livraison partout à Bruxelles</span><svg><use href="#leaf"/></svg>
+      <span>Bouquets sur mesure · Plantes rares · Mariages &amp; événements</span><svg><use href="#leaf"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ===================================================================
+     Navigation
+     =================================================================== -->
+<header class="nav" data-nav>
+  <div class="nav__inner">
+    <nav class="nav__links" aria-label="Navigation principale">
+      <a class="ulink" href="#creations">Créations</a>
+      <a class="ulink" href="#atelier">L’atelier</a>
+      <a class="ulink" href="#abonnement">Abonnement</a>
+      <a class="ulink" href="#carnet">Carnet</a>
+    </nav>
+
+    <a class="logo" href="#top" aria-label="Nioushadow Blooms, retour en haut">
+      <span>Nioushadow</span><svg class="logo__flower" aria-hidden="true"><use href="#flower"/></svg><span>Blooms</span>
+    </a>
+
+    <div class="nav__actions">
+      <a class="btn btn--ghost btn--square" href="https://www.instagram.com/nioushadow/" target="_blank" rel="noopener" aria-label="Instagram (nouvel onglet)">
+        <svg aria-hidden="true"><use href="#instagram"/></svg>
+      </a>
+      <a class="btn btn--ghost nav__cta" href="#contact">Commander</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" data-burger>
+        <span class="burger__lines" aria-hidden="true"><span></span><span></span></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menu mobile -->
+<div class="menu" id="menu" hidden data-menu>
+  <nav class="menu__links" aria-label="Menu">
+    <a href="#creations"><span>01</span>Créations</a>
+    <a href="#atelier"><span>02</span>L’atelier</a>
+    <a href="#abonnement"><span>03</span>Abonnement</a>
+    <a href="#carnet"><span>04</span>Carnet de saison</a>
+    <a href="#contact"><span>05</span>Commander</a>
+  </nav>
+  <div class="menu__info">
+    <a href="tel:+32477735659">+32 477 73 56 59</a>
+    <span>Mont des Arts 6, 1er étage — Bruxelles</span>
+  </div>
+  <div class="menu__shelf" aria-hidden="true">
+    <svg class="ill" viewBox="0 0 90 220"><use class="sway" href="#bud-plant"/><use href="#bud-pot"/></svg>
+    <svg class="ill" viewBox="0 0 180 320"><use class="sway" href="#vase-plant"/><use href="#vase-pot"/></svg>
+    <svg class="ill" viewBox="0 0 150 220"><use href="#cloche"/></svg>
+  </div>
+</div>
+
+<main id="contenu">
+
+<!-- ===================================================================
+     HERO — l’étagère
+     =================================================================== -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <h1 id="hero-title" class="sr-only">Nioushadow Blooms — fleuriste-atelier au Mont des Arts, Bruxelles</h1>
+  <p class="hero__tab" aria-hidden="true">Saison · Automne 2026</p>
+
+  <!-- Étagère supplémentaire, visible uniquement sur téléphone -->
+  <div class="shelf shelf--0" aria-hidden="true">
+    <div class="shelf__band"></div>
+    <div class="shelf__row">
+      <div class="shelf__stack">
+        <figure class="frame frame--h1">
+          <div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 3">
+            <svg class="ph__art" viewBox="0 0 200 260"><use href="#bouquet"/></svg>
+            <img src="assets/photos/hero-1.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()">
+          </div>
+        </figure>
+        <svg class="ill ill--books" viewBox="0 0 150 70"><use href="#books"/></svg>
+      </div>
+      <svg class="ill ill--vase" viewBox="0 0 180 320"><use class="sway" href="#vase-plant"/><use href="#vase-pot"/></svg>
+      <svg class="ill ill--pot" viewBox="0 0 200 280"><use class="sway" href="#pot-plant"/><use href="#pot-pot"/></svg>
+    </div>
+  </div>
+
+  <div class="shelf shelf--1">
+    <div class="shelf__band" aria-hidden="true"></div>
+    <div class="shelf__row">
+      <div class="shelf__stack">
+        <figure class="frame frame--h1">
+          <div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 3">
+            <svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg>
+            <img src="assets/photos/hero-1.jpg" alt="Bouquet de saison composé à l’atelier Nioushadow Blooms" fetchpriority="high" decoding="async" onerror="this.remove()">
+          </div>
+        </figure>
+        <svg class="ill ill--books" viewBox="0 0 150 70" aria-hidden="true"><use href="#books"/></svg>
+      </div>
+      <p class="wordmark wordmark--1" data-letters aria-hidden="true">Nioushadow</p>
+      <svg class="ill ill--vase" viewBox="0 0 180 320" aria-hidden="true"><use class="sway" href="#vase-plant"/><use href="#vase-pot"/></svg>
+    </div>
+  </div>
+
+  <div class="shelf shelf--2">
+    <div class="shelf__band" aria-hidden="true"></div>
+    <div class="shelf__row">
+      <p class="wordmark wordmark--2" data-letters aria-hidden="true">Blooms</p>
+      <figure class="frame frame--h2">
+        <div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 3 / 4">
+          <svg class="ph__art" viewBox="0 0 90 220" aria-hidden="true"><use href="#bud-plant"/><use href="#bud-pot"/></svg>
+          <img src="assets/photos/hero-2.jpg" alt="Détail d’une fleur de saison" decoding="async" onerror="this.remove()">
+        </div>
+      </figure>
+      <svg class="ill ill--bud" viewBox="0 0 90 220" aria-hidden="true"><use class="sway" href="#bud-plant"/><use href="#bud-pot"/></svg>
+      <svg class="ill ill--pot" viewBox="0 0 200 280" aria-hidden="true"><use class="sway" href="#pot-plant"/><use href="#pot-pot"/></svg>
+    </div>
+  </div>
+
+  <div class="hero__foot container">
+    <div class="hero__caption" data-hero-fade>
+      <p class="kicker">Fleuriste-atelier · Mont des Arts</p>
+      <p class="hero__text">Compositions de saison, dessinées et nouées à la main. Pour offrir, pour célébrer, pour habiter un lieu.</p>
+    </div>
+    <ul class="hero__index" data-hero-fade>
+      <li><a href="#creations"><span>Bouquets &amp; plantes rares</span><svg aria-hidden="true"><use href="#arrow-right"/></svg></a></li>
+      <li><a href="#creations"><span>Mariages &amp; événements</span><svg aria-hidden="true"><use href="#arrow-right"/></svg></a></li>
+      <li><a href="#abonnement"><span>Abonnements floraux</span><svg aria-hidden="true"><use href="#arrow-right"/></svg></a></li>
+    </ul>
+    <div class="hero__ctas" data-hero-fade>
+      <a class="btn btn--ink" href="#contact">Commander un bouquet <svg class="btn__arrow" aria-hidden="true"><use href="#arrow-right"/></svg></a>
+      <a class="hero__phone ulink" href="tel:+32477735659"><svg aria-hidden="true"><use href="#phone"/></svg>+32 477 73 56 59</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     L’ATELIER
+     =================================================================== -->
+<section class="section atelier" id="atelier" aria-labelledby="atelier-title">
+  <div class="container atelier__grid">
+    <div class="atelier__media">
+      <figure class="frame frame--lg" data-reveal="frame">
+        <div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 5">
+          <svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg>
+          <img src="assets/photos/atelier.jpg" alt="Composition florale en préparation à l’atelier" loading="lazy" decoding="async" onerror="this.remove()">
+        </div>
+      </figure>
+      <div class="note" data-reveal="note" aria-hidden="true">
+        <svg class="note__arrow" viewBox="0 0 120 80"><use href="#arrow"/></svg>
+        <p class="note__text">noué à la main,<br>tige par tige</p>
+        <svg class="note__ill ill" viewBox="0 0 90 220"><use class="sway" href="#bud-plant"/><use href="#bud-pot"/></svg>
+      </div>
+    </div>
+
+    <div class="atelier__body">
+      <p class="kicker" data-reveal>L’atelier — N°01</p>
+      <h2 class="h2" id="atelier-title" data-split>Des fleurs choisies pour ce qu’elles <em>ont à dire</em></h2>
+      <p class="lead" data-reveal>Chaque composition commence par une conversation&#8239;: une personne, un moment, une lumière. Nous travaillons au rythme des saisons, avec des tiges choisies une à une, pour des bouquets généreux, libres et jamais figés.</p>
+      <p class="lead" data-reveal>Pas de catalogue à recopier&#8239;: chaque pièce est pensée pour vous et composée à la main dans notre atelier, au premier étage du Mont des Arts — à deux pas de la gare Centrale.</p>
+      <dl class="labels" data-reveal>
+        <div><dt>Adresse</dt><dd>Mont des Arts 6, 1<sup>er</sup> étage</dd></div>
+        <div><dt>Commandes</dt><dd>24&nbsp;h à l’avance</dd></div>
+        <div><dt>Livraison</dt><dd>Partout à Bruxelles</dd></div>
+      </dl>
+      <a class="wavy" href="#contact" data-reveal>Parlons de votre projet</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     NOS CRÉATIONS — index
+     =================================================================== -->
+<section class="section creations" id="creations" aria-labelledby="creations-title">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="kicker" data-reveal>Ce que nous composons — N°02</p>
+        <h2 class="h2" id="creations-title" data-split>Nos <em>créations</em></h2>
+      </div>
+      <p class="section-head__aside" data-reveal>Du bouquet du vendredi à la scénographie d’un mariage, chaque création part des fleurs de la saison — et de votre histoire.</p>
+    </div>
+
+    <ol class="index" data-index>
+      <li data-reveal>
+        <a class="index__row" href="#contact" data-occasion="Bouquet">
+          <span class="index__num">01</span>
+          <span class="index__title">Bouquets sur mesure</span>
+          <span class="index__desc">Des bouquets libres et généreux, composés selon les arrivages de la semaine et vos envies. À offrir, ou à s’offrir.</span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/creation-bouquets.jpg" alt="" loading="lazy" onerror="this.remove()"></span></span>
+          <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
+        </a>
+      </li>
+      <li data-reveal>
+        <a class="index__row" href="#contact" data-occasion="Plantes">
+          <span class="index__num">02</span>
+          <span class="index__title">Plantes rares</span>
+          <span class="index__desc">Des plantes choisies pour leur caractère — feuillages graphiques, espèces peu communes — prêtes à habiter votre intérieur.</span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--cream); --ill-b: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 280" aria-hidden="true"><use href="#pot-plant"/><use href="#pot-pot"/></svg><img src="assets/photos/creation-plantes.jpg" alt="" loading="lazy" onerror="this.remove()"></span></span>
+          <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
+        </a>
+      </li>
+      <li data-reveal>
+        <a class="index__row" href="#contact" data-occasion="Mariage">
+          <span class="index__num">03</span>
+          <span class="index__title">Mariages</span>
+          <span class="index__desc">De la boutonnière à l’arche fleurie&#8239;: une scénographie pensée avec vous, du premier rendez-vous au jour&nbsp;J.</span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 1"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/creation-mariages.jpg" alt="" loading="lazy" onerror="this.remove()"></span></span>
+          <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
+        </a>
+      </li>
+      <li data-reveal>
+        <a class="index__row" href="#contact" data-occasion="Événement">
+          <span class="index__num">04</span>
+          <span class="index__title">Événements &amp; entreprises</span>
+          <span class="index__desc">Dîners, lancements, vitrines, réceptions, expériences VIP&#8239;: des compositions à la mesure du lieu et de l’occasion.</span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 150 220" aria-hidden="true"><use href="#cloche"/></svg><img src="assets/photos/creation-evenements.jpg" alt="" loading="lazy" onerror="this.remove()"></span></span>
+          <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
+        </a>
+      </li>
+      <li data-reveal>
+        <a class="index__row" href="#abonnement" data-occasion="Abonnement">
+          <span class="index__num">05</span>
+          <span class="index__title">Abonnements floraux</span>
+          <span class="index__desc">Un bouquet frais livré à intervalle régulier, chez vous ou au bureau, partout dans Bruxelles.</span>
+          <span class="index__thumb"><span class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 1"><svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg><img src="assets/photos/creation-abonnements.jpg" alt="" loading="lazy" onerror="this.remove()"></span></span>
+          <svg class="index__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
+        </a>
+      </li>
+    </ol>
+  </div>
+
+  <!-- Aperçu qui suit le curseur (ordinateur uniquement) -->
+  <div class="preview" aria-hidden="true" data-preview>
+    <div class="preview__frame frame"></div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     ABONNEMENT
+     =================================================================== -->
+<section class="section abo-section" id="abonnement" aria-labelledby="abo-title">
+  <div class="container">
+    <div class="abo">
+      <div class="abo__body">
+        <p class="kicker" data-reveal>Abonnement floral — N°03</p>
+        <h2 class="h2" id="abo-title" data-split>Des fleurs fraîches, <em>sans y penser</em></h2>
+        <p class="lead" data-reveal>Chaque livraison est une surprise de saison, composée à l’atelier et déposée chez vous, au bureau ou au restaurant. Vous choisissez le rythme, nous nous occupons du reste.</p>
+
+        <fieldset class="rhythm" data-reveal>
+          <legend>Votre rythme</legend>
+          <div class="rhythm__opts">
+            <label class="chip"><input type="radio" name="rythme" value="Chaque semaine" data-note="Environ 52 bouquets par an — idéal pour un hall, une boutique ou un restaurant." checked><span>Chaque semaine</span></label>
+            <label class="chip"><input type="radio" name="rythme" value="Toutes les deux semaines" data-note="Environ 26 bouquets par an — un intérieur toujours fleuri, sans y penser."><span>Toutes les deux semaines</span></label>
+            <label class="chip"><input type="radio" name="rythme" value="Chaque mois" data-note="12 bouquets par an — un rendez-vous de saison, chaque mois."><span>Chaque mois</span></label>
+          </div>
+          <p class="rhythm__note" aria-live="polite" data-rhythm-note>Environ 52 bouquets par an — idéal pour un hall, une boutique ou un restaurant.</p>
+        </fieldset>
+
+        <a class="btn btn--ink" href="#contact" data-reveal data-abo-cta>Démarrer un abonnement <svg class="btn__arrow" aria-hidden="true"><use href="#arrow-right"/></svg></a>
+      </div>
+
+      <div class="abo__media" aria-hidden="true">
+        <div class="abo__band"></div>
+        <figure class="frame abo__big" data-reveal="frame">
+          <div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 4 / 5">
+            <svg class="ph__art" viewBox="0 0 180 320"><use href="#vase-plant"/><use href="#vase-pot"/></svg>
+            <img src="assets/photos/abonnement-1.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()">
+          </div>
+        </figure>
+        <div class="abo__stack">
+          <figure class="frame abo__small" data-reveal="frame" style="--d: .15s">
+            <div class="ph" style="--ph-bg: var(--cream); --ratio: 1">
+              <svg class="ph__art" viewBox="0 0 90 220"><use href="#bud-plant"/><use href="#bud-pot"/></svg>
+              <img src="assets/photos/abonnement-2.jpg" alt="" loading="lazy" decoding="async" onerror="this.remove()">
+            </div>
+          </figure>
+          <svg class="abo__books" viewBox="0 0 150 70"><use href="#books"/></svg>
+        </div>
+        <svg class="ill abo__cloche" viewBox="0 0 150 220"><use href="#cloche"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     COMMENT COMMANDER
+     =================================================================== -->
+<section class="section steps" aria-labelledby="steps-title">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="kicker" data-reveal>Comment commander — N°04</p>
+        <h2 class="h2" id="steps-title" data-split>Du premier message <em>à la livraison</em></h2>
+      </div>
+      <p class="tag" data-reveal><svg aria-hidden="true"><use href="#clock"/></svg>Commandes au moins 24&nbsp;h à l’avance</p>
+    </div>
+
+    <ol class="steps__list" data-reveal="line">
+      <li class="step" data-reveal style="--d: .05s">
+        <div class="step__icon"><span class="step__num">01</span><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-chat"/></svg></div>
+        <h3 class="step__title">Parlez-nous de votre envie</h3>
+        <p>L’occasion, la date, les couleurs, le budget — par téléphone, WhatsApp ou via le formulaire ci-dessous.</p>
+      </li>
+      <li class="step" data-reveal style="--d: .2s">
+        <div class="step__icon"><span class="step__num">02</span><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-shears"/></svg></div>
+        <h3 class="step__title">Nous composons à l’atelier</h3>
+        <p>Nous sélectionnons les plus belles fleurs de saison et composons votre pièce entièrement à la main.</p>
+      </li>
+      <li class="step" data-reveal style="--d: .35s">
+        <div class="step__icon"><span class="step__num">03</span><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-bike"/></svg></div>
+        <h3 class="step__title">Livraison dans Bruxelles</h3>
+        <p>Livrée avec soin à l’adresse de votre choix, ou à retirer à l’atelier, au Mont des Arts.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===================================================================
+     CARNET DE SAISON — étagère-galerie
+     =================================================================== -->
+<section class="section carnet" id="carnet" aria-labelledby="carnet-title">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="kicker" data-reveal>Carnet de saison — N°05</p>
+        <h2 class="h2" id="carnet-title" data-split>Compositions <em>récentes</em></h2>
+      </div>
+      <div class="carnet__tools" data-reveal>
+        <a class="wavy" href="https://www.instagram.com/nioushadow/" target="_blank" rel="noopener">@nioushadow sur Instagram</a>
+        <div class="carnet__arrows">
+          <button class="btn btn--ghost btn--square" type="button" data-gallery-prev aria-label="Compositions précédentes"><svg aria-hidden="true"><use href="#chev-left"/></svg></button>
+          <button class="btn btn--ghost btn--square" type="button" data-gallery-next aria-label="Compositions suivantes"><svg aria-hidden="true"><use href="#chev-right"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="gallery" data-gallery>
+    <div class="gallery__band" aria-hidden="true"></div>
+    <ul class="gallery__track" data-gallery-track tabindex="0" aria-label="Galerie de compositions, faire défiler horizontalement">
+      <li class="gallery__item" style="--s: 1">
+        <figure>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 4 / 5"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/carnet-1.jpg" alt="Bouquet de saison" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <figcaption><span>N°01</span>Bouquet de saison</figcaption>
+        </figure>
+      </li>
+      <li class="gallery__item" style="--s: 1.18">
+        <figure>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 3 / 4"><svg class="ph__art" viewBox="0 0 200 280" aria-hidden="true"><use href="#pot-plant"/><use href="#pot-pot"/></svg><img src="assets/photos/carnet-2.jpg" alt="Plante rare" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <figcaption><span>N°02</span>Plante rare</figcaption>
+        </figure>
+      </li>
+      <li class="gallery__item" style="--s: .86">
+        <figure>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 1"><svg class="ph__art" viewBox="0 0 150 220" aria-hidden="true"><use href="#cloche"/></svg><img src="assets/photos/carnet-3.jpg" alt="Table de mariage" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <figcaption><span>N°03</span>Table de mariage</figcaption>
+        </figure>
+      </li>
+      <li class="gallery__item" style="--s: 1.08">
+        <figure>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--cream); --ill-b: var(--lavender); --ratio: 4 / 5"><svg class="ph__art" viewBox="0 0 180 320" aria-hidden="true"><use href="#vase-plant"/><use href="#vase-pot"/></svg><img src="assets/photos/carnet-4.jpg" alt="Composition d’automne" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <figcaption><span>N°04</span>Composition d’automne</figcaption>
+        </figure>
+      </li>
+      <li class="gallery__item" style="--s: 1.24">
+        <figure>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--olive); --ill-a: var(--cream); --ratio: 2 / 3"><svg class="ph__art" viewBox="0 0 200 260" aria-hidden="true"><use href="#bouquet"/></svg><img src="assets/photos/carnet-5.jpg" alt="Bouquet de mariée" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <figcaption><span>N°05</span>Bouquet de mariée</figcaption>
+        </figure>
+      </li>
+      <li class="gallery__item" style="--s: .92">
+        <figure>
+          <div class="frame"><div class="ph" style="--ph-bg: var(--lavender); --ratio: 5 / 4"><svg class="ph__art" viewBox="0 0 90 220" aria-hidden="true"><use href="#bud-plant"/><use href="#bud-pot"/></svg><img src="assets/photos/carnet-6.jpg" alt="Vitrine florale" loading="lazy" decoding="async" draggable="false" onerror="this.remove()"></div></div>
+          <figcaption><span>N°06</span>Vitrine florale</figcaption>
+        </figure>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="gallery__progress" aria-hidden="true"><span data-gallery-progress></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================================
+     COMMANDE & CONTACT
+     =================================================================== -->
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+  <div class="container contact__grid">
+    <div class="contact__intro">
+      <p class="kicker" data-reveal>Commande &amp; contact — N°06</p>
+      <h2 class="h2" id="contact-title" data-split>Racontez-nous <em>votre moment</em></h2>
+      <p class="lead" data-reveal>Un bouquet pour demain, un mariage l’an prochain&#8239;: écrivez-nous, nous revenons vers vous avec une proposition sur mesure.</p>
+
+      <dl class="labels labels--contact" data-reveal>
+        <div>
+          <dt>Atelier</dt>
+          <dd>Mont des Arts 6, 1<sup>er</sup> étage<br>1000 Bruxelles
+            <a class="wavy wavy--sm" href="https://www.google.com/maps/search/?api=1&amp;query=Mont+des+Arts+6+1000+Bruxelles" target="_blank" rel="noopener">Itinéraire</a></dd>
+        </div>
+        <div>
+          <dt>Téléphone</dt>
+          <dd><a class="wavy" href="tel:+32477735659">+32 477 73 56 59</a></dd>
+        </div>
+        <div>
+          <dt>WhatsApp</dt>
+          <dd><a class="wavy" href="https://wa.me/32477735659" target="_blank" rel="noopener">Écrire sur WhatsApp</a></dd>
+        </div>
+        <div>
+          <dt>Commandes</dt>
+          <dd>Au moins 24&nbsp;h à l’avance</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div class="contact__panel" data-reveal="frame">
+      <form class="form" data-form novalidate>
+        <fieldset class="seg">
+          <legend>Occasion</legend>
+          <div class="seg__opts">
+            <label class="seg__opt"><input type="radio" name="occasion" value="Bouquet" checked><span>Bouquet</span></label>
+            <label class="seg__opt"><input type="radio" name="occasion" value="Plantes"><span>Plantes</span></label>
+            <label class="seg__opt"><input type="radio" name="occasion" value="Mariage"><span>Mariage</span></label>
+            <label class="seg__opt"><input type="radio" name="occasion" value="Événement"><span>Événement</span></label>
+            <label class="seg__opt"><input type="radio" name="occasion" value="Abonnement"><span>Abonnement</span></label>
+          </div>
+        </fieldset>
+
+        <div class="form__row">
+          <div class="field">
+            <label for="f-name">Nom <span aria-hidden="true">*</span></label>
+            <input class="input" id="f-name" name="nom" type="text" autocomplete="name" required placeholder="Votre nom">
+            <p class="field__error" data-error-for="f-name">Merci d’indiquer votre nom.</p>
+          </div>
+          <div class="field">
+            <label for="f-email">E-mail <span aria-hidden="true">*</span></label>
+            <input class="input" id="f-email" name="email" type="email" autocomplete="email" required placeholder="vous@exemple.be">
+            <p class="field__error" data-error-for="f-email">Merci d’indiquer un e-mail valide.</p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-date">Date souhaitée</label>
+          <input class="input" id="f-date" name="date" type="date" data-date>
+        </div>
+        <div class="field">
+          <label for="f-msg">Votre message</label>
+          <textarea class="input" id="f-msg" name="message" rows="4" placeholder="Couleurs, style, budget, lieu de livraison…" data-message></textarea>
+        </div>
+        <div class="hp" aria-hidden="true"><label>Ne pas remplir <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+
+        <button class="btn btn--ink form__submit" type="submit">
+          <span>Envoyer ma demande · <span data-occasion-label>Bouquet</span></span>
+          <svg class="btn__arrow" aria-hidden="true"><use href="#arrow-right"/></svg>
+        </button>
+      </form>
+
+      <div class="success" data-success hidden tabindex="-1">
+        <div class="success__icon"><svg aria-hidden="true"><use href="#check"/></svg></div>
+        <h3 class="success__title" data-success-title>Merci, c’est bien reçu.</h3>
+        <p class="lead" data-success-text></p>
+        <div class="success__actions">
+          <a class="btn btn--ink" href="https://wa.me/32477735659" target="_blank" rel="noopener" data-success-wa hidden>Ouvrir WhatsApp <svg class="btn__arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
+          <button class="btn btn--ghost" type="button" data-reset>Envoyer une autre demande</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================================================================
+     PIED DE PAGE
+     =================================================================== -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a class="logo" href="#top"><span>Nioushadow</span><svg class="logo__flower" aria-hidden="true"><use href="#flower"/></svg><span>Blooms</span></a>
+      <p>Fleuriste-atelier au Mont des Arts, Bruxelles. Bouquets sur mesure, plantes rares, mariages et événements.</p>
+      <p class="footer__maison">Une maison NiouShadow Fashion Luxuries Design</p>
+    </div>
+    <div class="footer__col">
+      <p class="footer__title">Créations</p>
+      <a class="wavy" href="#creations">Bouquets sur mesure</a>
+      <a class="wavy" href="#creations">Plantes rares</a>
+      <a class="wavy" href="#creations">Mariages</a>
+      <a class="wavy" href="#creations">Événements &amp; entreprises</a>
+      <a class="wavy" href="#abonnement">Abonnements</a>
+    </div>
+    <div class="footer__col">
+      <p class="footer__title">La maison</p>
+      <a class="wavy" href="#atelier">L’atelier</a>
+      <a class="wavy" href="#carnet">Carnet de saison</a>
+      <a class="wavy" href="#contact">Commander</a>
+    </div>
+    <div class="footer__col">
+      <p class="footer__title">Suivre</p>
+      <a class="wavy" href="https://www.instagram.com/nioushadow/" target="_blank" rel="noopener">Instagram</a>
+      <a class="wavy" href="https://wa.me/32477735659" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="wavy" href="tel:+32477735659">+32 477 73 56 59</a>
+    </div>
+  </div>
+
+  <div class="shelf shelf--footer" data-reveal="shelf">
+    <div class="shelf__band" aria-hidden="true"></div>
+    <div class="shelf__row">
+      <svg class="ill ill--cloche" viewBox="0 0 150 220" aria-hidden="true"><use href="#cloche"/></svg>
+      <p class="wordmark wordmark--footer" data-letters aria-hidden="true">Nioushadow <em>Blooms</em></p>
+      <svg class="ill ill--bud" viewBox="0 0 90 220" aria-hidden="true"><use class="sway" href="#bud-plant"/><use href="#bud-pot"/></svg>
+    </div>
+  </div>
+
+  <div class="container footer__meta">
+    <span>© <span data-year>2026</span> Nioushadow Blooms — Fleuriste à Bruxelles</span>
+    <span>Fait main, au fil des saisons</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
